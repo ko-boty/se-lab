@@ -12,7 +12,7 @@ public class TorpedoStore {
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
 
-  private Random generator = new Random();
+  private Random generator = new Random(); //Single random generator, can be resused
 
   private int torpedoCount = 0;
 
